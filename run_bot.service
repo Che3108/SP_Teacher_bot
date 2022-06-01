@@ -1,0 +1,10 @@
+[Unit]
+Description=Teachers bot
+After=network.target
+[Service]
+User=bot_user
+Group=bot_user
+Type=idle
+ExecStart=/home/bot_user/bot/students_copy.py
+[Install]
+WantedBy=network.target
